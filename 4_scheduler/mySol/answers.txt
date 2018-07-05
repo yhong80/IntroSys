@@ -1,0 +1,80 @@
+CS 2200 Spring 2018
+Project 4
+
+Name:Young Ki Hong
+GT Username:yhong80
+
+Problem 1B
+----------
+$./os-sim 1
+# of Context Switches: 98
+Total execution time: 67.6 s
+Total time spent in READY state: 390.2 s
+
+$./os-sim 2
+# of Context Switches: 103
+Total execution time: 36.2 s
+Total time spent in READY state: 79.8 s
+
+
+$./os-sim 4
+# of Context Switches: 180
+Total execution time: 33.5 s
+Total time spent in READY state: 1.3 s
+
+At first when we compare the times of one CPU and two CPUs, it seems like there is a linear relationship, but when we compare the time of two CPUs and three CPUS, we find out it's not linear relationhip.
+The reason is that as the number of CPU increased, some CPUs becomes IDLE.
+
+
+
+Problem 2B
+----------
+
+$./os-sim 1 -r 2
+# of Context Switches: 361
+Total execution time: 67.5 s
+Total time spent in READY state: 285.5 s
+
+$./os-sim 1 -r 4
+# of Context Switches: 203
+Total execution time: 67.6 s
+Total time spent in READY state: 300.0 s
+
+$./os-sim 1 -r 6
+# of Context Switches: 161
+Total execution time: 67.6 s
+Total time spent in READY state: 314.0 s
+
+$./os-sim 1 -r 8
+# of Context Switches: 136
+Total execution time: 67.6 s
+Total time spent in READY state: 324.9 s
+
+As we use smaller timeslices, we get smaller total waiting time.
+In a real OS, however, this is not a good choice since, smaller time slice will make more context_switches which also takes time.
+
+
+
+
+
+Problem 3B
+----------
+Because we cannot iterate everything in the list, it is essentially impossible to implement precisely in real life.
+
+$./os-sim 1 -s
+# of Context Switches: 149
+Total execution time: 68.4 s
+Total time spent in READY state: 181.7 s
+
+$./os-sim 1 -r 2
+# of Context Switches: 361
+Total execution time: 67.5 s
+Total time spent in READY state: 285.5 s
+
+$./os-sim 1
+# of Context Switches: 98
+Total execution time: 67.6 s
+Total time spent in READY state: 390.2 s
+
+SRTF is the lowest since it doesn't have convoy effect.
+

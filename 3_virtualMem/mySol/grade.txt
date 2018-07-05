@@ -1,0 +1,14 @@
+Code compiles: 20/20
+simple.trace: 40/40
+* [15/15] Simulator ran to completion
+* [15/15] Memory accesses correct
+* [10/10] Stats correct
+bzip2.trace: 40/40
+* [15/15] Simulator ran to completion
+* [15/15] Memory accesses correct
+* [10/10] Stats correct
+
+Project grade: 100
+Demo grade: 100 (demoed with Alex)
+
+Overall grade: 100

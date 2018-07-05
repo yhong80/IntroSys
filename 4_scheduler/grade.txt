@@ -1,0 +1,11 @@
+(-6) SRTF wait times too long
+(-10) Does not lock ready queue mutex during dequeue 
+
+--Tanner
+
+Project score: 84
+Demo Score: 95 (demoed with Jeet)
+
+Your submission was 2 days and 23 hours late. Your one-time forgiveness has been consumed.
+
+Overall grade: 80
